@@ -10,6 +10,7 @@
 #import "Constants.h"
 #import "Product.h"
 #import "CustomTableViewCell.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
 
@@ -18,11 +19,11 @@
 @property (weak, nonatomic) IBOutlet UITableView *productTable;
 @property(nonatomic, strong) UISearchDisplayController *strongSearchDisplayController;
 
-
 @end
 
 @implementation ViewController
 
+int selectedId;
 -(NSMutableArray *)productArray{
     
     if(!_productArray) _productArray = [[NSMutableArray alloc]init];
@@ -61,6 +62,7 @@
             
             NSLog(@"%@",currentNode);
             Product *currentProduct = [Product new];
+            currentProduct.productId = [[currentNode objectForKey:@"product_id"] integerValue];
             
             currentProduct.location = [currentNode objectForKey:@"location"];
             currentProduct.name = [currentNode objectForKey:@"name"];
@@ -152,8 +154,26 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
+    Product *tmp = [self.productArray objectAtIndex:indexPath.row];
+    
+    selectedId = tmp.productId;
+    
+    [self goToDetails];
+    
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+
+    DetailViewController *destination = segue.destinationViewController;
+    
+    destination.productId = selectedId;
+    
+}
+
+-(void)goToDetails{
+    
+    [self performSegueWithIdentifier:@"segueDetail" sender:self];
+}
 
 
 - (void)scrollTableViewToSearchBarAnimated:(BOOL)animated

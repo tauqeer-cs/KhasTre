@@ -42,6 +42,8 @@
 		478C46851994ACEC0061A46E /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 478C467B1994ACEC0061A46E /* AFURLResponseSerialization.m */; };
 		478C46861994ACEC0061A46E /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 478C467D1994ACEC0061A46E /* AFURLSessionManager.m */; };
 		478C468B1994D0590061A46E /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 478C468A1994D0590061A46E /* Product.m */; };
+		47EACB85199CCDA10003BB2A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EACB84199CCDA10003BB2A /* DetailViewController.m */; };
+		47EACB88199CD83B0003BB2A /* ImageGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EACB87199CD83B0003BB2A /* ImageGallery.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,10 @@
 		478C46871994B3E70061A46E /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		478C46891994D0590061A46E /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		478C468A1994D0590061A46E /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		47EACB83199CCDA10003BB2A /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		47EACB84199CCDA10003BB2A /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		47EACB86199CD83B0003BB2A /* ImageGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageGallery.h; sourceTree = "<group>"; };
+		47EACB87199CD83B0003BB2A /* ImageGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageGallery.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +189,8 @@
 				478C45F51994A4F50061A46E /* AppDelegate.h */,
 				478C45F61994A4F50061A46E /* AppDelegate.m */,
 				478C45F81994A4F50061A46E /* Main.storyboard */,
+				47EACB86199CD83B0003BB2A /* ImageGallery.h */,
+				47EACB87199CD83B0003BB2A /* ImageGallery.m */,
 				478C45FB1994A4F50061A46E /* ViewController.h */,
 				478C45FC1994A4F50061A46E /* ViewController.m */,
 				478C46871994B3E70061A46E /* Constants.h */,
@@ -192,6 +200,8 @@
 				470CEA31199886D70084C624 /* CustomTableViewCell.m */,
 				470CEA3319988EDB0084C624 /* AsyncImageView.h */,
 				470CEA3419988EDB0084C624 /* AsyncImageView.m */,
+				47EACB83199CCDA10003BB2A /* DetailViewController.h */,
+				47EACB84199CCDA10003BB2A /* DetailViewController.m */,
 			);
 			path = OpenCard;
 			sourceTree = "<group>";
@@ -396,6 +406,8 @@
 				478C46851994ACEC0061A46E /* AFURLResponseSerialization.m in Sources */,
 				478C466A1994ACD60061A46E /* UIWebView+AFNetworking.m in Sources */,
 				478C46661994ACD60061A46E /* UIButton+AFNetworking.m in Sources */,
+				47EACB88199CD83B0003BB2A /* ImageGallery.m in Sources */,
+				47EACB85199CCDA10003BB2A /* DetailViewController.m in Sources */,
 				478C46801994ACEC0061A46E /* AFHTTPSessionManager.m in Sources */,
 				478C46671994ACD60061A46E /* UIImageView+AFNetworking.m in Sources */,
 				478C46631994ACD60061A46E /* AFNetworkActivityIndicatorManager.m in Sources */,

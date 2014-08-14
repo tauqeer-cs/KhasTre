@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Product : NSObject
-
+@property (nonatomic) int productId;
 @property (nonatomic,strong) NSString * location;
 @property (nonatomic,strong) NSString * name;
 @property (nonatomic) int quantity;
